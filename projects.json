@@ -22,29 +22,5 @@
     "duration": "1 day",
     "date": "July 2024"
   }
-    },
-    
-    {
-      "title": "Project Kedua Anda",
-      "category": "UI/UX Design",
-      "technologies": "Figma, Adobe XD",
-      "mainImage": "project-image-2.jpg",
-      "description": "Deskripsi untuk project kedua...",
-      "detailImage1": "detail-2-1.jpg",
-      "challenge": "Tantangan project kedua...",
-      "solution": "Solusi untuk project kedua...",
-      "detailImage2": "detail-2-2.jpg",
-      "features": [
-        "User Research",
-        "Prototyping",
-        "Usability Testing"
-      ],
-      "impact": "Dampak project kedua...",
-      "sidebar": {
-        "category": "UI/UX Design",
-        "client": "Klien B",
-        "duration": "1 bulan",
-        "date": "Mei 2025"
-      }
     }
   ]
