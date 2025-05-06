@@ -645,3 +645,127 @@ footer {
         margin-bottom: 0.5rem;
     }
 }
+
+/* styles/certificate-detail.css */
+
+/* ===== Umum ===== */
+
+.main-container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1.5rem;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--first-color-alt);
+}
+
+/* ===== Detail Sertifikat ===== */
+#certificate-detail {
+    padding-bottom: 3rem;
+}
+
+.certificate-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.certificate-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificate-info h2 {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.certificate-info p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.certificate-info strong {
+    font-weight: var(--font-semi);
+    color: var(--title-color);
+    margin-right: 0.25rem;
+}
+
+.certificate-info a {
+    color: var(--first-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.certificate-info a:hover {
+    color: var(--first-color-alt);
+}
+
+/* ===== Pesan Error ===== */
+.error-message {
+    color: #dc3545;
+    font-weight: var(--font-semi);
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+    .certificate-container {
+        flex-direction: column;
+    }
+
+    .certificate-image {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .certificate-info {
+        align-items: flex-start;
+    }
+                               }
