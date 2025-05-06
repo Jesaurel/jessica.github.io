@@ -1,28 +1,29 @@
 [
     {
-      "title": "Judul Project Kamu",
-      "category": "Web Development",
-      "technologies": "React, Tailwind",
-      "mainImage": "project-image.jpg",
-      "description": "Lorem ipsum dolor sit amet, ini deskripsi panjang project-nya. Jelasin tentang project ini, kenapa dibuat, tools yang dipakai, proses pembuatannya, dan apapun yang kamu mau.",
-      "detailImage1": "project-image-detail-1.jpg",
-      "challenge": "Menghadapi deadline sempit dan project mandiri yang butuh riset sendiri.",
-      "solution": "Memanfaatkan waktu luang di malam hari, riset UI/UX, dan buat prototype terlebih dahulu.",
-      "detailImage2": "project-image-detail-2.jpg",
-      "features": [
-        "Responsive Layout",
-        "Dark Mode",
-        "CRUD Fitur Admin",
-        "SEO Optimization"
-      ],
-      "impact": "Project ini berhasil dipakai oleh 50+ user internal dan client bilang tampilannya profesional.",
-      "sidebar": {
-        "category": "Web Development",
-        "client": "Personal Project (Gabut)",
-        "duration": "2 minggu",
-        "date": "April 2025"
-      }
+  "title": "Simple Modern Calculator",
+  "category": "Desktop Application",
+  "technologies": "Python, Tkinter",
+  "mainImage": "kalkulator-main.jpg",
+  "description": "A modern calculator app I built in just one day using Python and Tkinter. What started as a fun mini-challenge turned into a clean, functional tool with support for basic operations, trigonometric functions, and more. I wanted to test how much I could build in a short time, focusing on usability and simple design. Tkinter was perfect for fast development, and I used the project to sharpen both my UI and logic-building skills.",
+  "detailImage1": "kalkulator-detail-1.jpg",
+  "challenge": "Building everything from scratch with no prior GUI calculator experience — and finishing it all in a day.",
+  "solution": "Used my free evening to sketch a quick UI idea, researched some minimalist calculator designs, and coded the core features one at a time.",
+  "detailImage2": "kalkulator-detail-2.jpg",
+  "features": [
+    "Basic Math Operations",
+    "Trigonometric Functions",
+    "Square Root & Exponent",
+    "Input Validation"
+  ],
+  "impact": "This small project helped boost my confidence in Python GUI development and proved that focused effort — even on a random day — can lead to something useful and presentable.",
+  "sidebar": {
+    "category": "Desktop App",
+    "client": "Personal Project",
+    "duration": "1 day",
+    "date": "July 2024"
+  }
     },
+    
     {
       "title": "Project Kedua Anda",
       "category": "UI/UX Design",
