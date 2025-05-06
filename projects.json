@@ -3,7 +3,7 @@
   "title": "Simple Modern Calculator",
   "category": "Desktop Application",
   "technologies": "Python, Tkinter",
-  "mainImage": "kalkulator-main.jpg",
+  "mainImage": "images/portfolios/IMG_20250506_185239.jpg",
   "description": "A modern calculator app I built in just one day using Python and Tkinter. What started as a fun mini-challenge turned into a clean, functional tool with support for basic operations, trigonometric functions, and more. I wanted to test how much I could build in a short time, focusing on usability and simple design. Tkinter was perfect for fast development, and I used the project to sharpen both my UI and logic-building skills.",
   "detailImage1": "kalkulator-detail-1.jpg",
   "challenge": "Building everything from scratch with no prior GUI calculator experience — and finishing it all in a day.",
