@@ -22,5 +22,33 @@
     "duration": "1 day",
     "date": "July 2024"
   }
+    },
+
+    {
+  "title": "Dark Mode To-Do List",
+  "category": "Desktop Application",
+  "technologies": "Python, Tkinter",
+  "mainImage": "todo-main.jpg",
+  "description": "A modern, minimalist To-Do List application built using Python and Tkinter. Designed in a sleek dark theme, this app helps users manage daily tasks efficiently. Users can add, edit, complete, and delete tasks with intuitive buttons, and even clear all tasks with a single click. Each task entry is interactive, and the layout is responsive to user actions. This was a solo project built in a day, showcasing clean UI structuring and dynamic widget handling using only Python.",
+  "detailImage1": "todo-detail-1.jpg",
+  "challenge": "Creating an intuitive and responsive task management UI using only basic Tkinter without third-party libraries.",
+  "solution": "Used custom dialog boxes for input/editing, applied consistent dark theme colors, and structured task components using reusable frames and widgets.",
+  "detailImage2": "todo-detail-2.jpg",
+  "features": [
+    "Dark Mode UI",
+    "Add/Edit/Delete Tasks",
+    "Complete Task with Strike-Through",
+    "Clear All Tasks Option",
+    "Confirmation Dialogs",
+    "Custom Popup Input Form"
+  ],
+  "impact": "The app became a fun and practical tool for organizing daily goals. Its UI-focused design shows what can be achieved with core Python in just one day.",
+  "sidebar": {
+    "category": "Desktop App",
+    "client": "Personal Project",
+    "duration": "1 day",
+    "date": "May 2025"
+  }
     }
+    
   ]
