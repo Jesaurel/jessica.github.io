@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/certificate-detail.css"> <title>Detail Sertifikat - [Nama Sertifikat]</title>
+    <link rel="stylesheet" href="styles/certificate-detail.css">
+    <title>Detail Sertifikat - [Nama Sertifikat]</title>
 </head>
 <body>
     <header>
@@ -17,14 +18,19 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        </ul>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
     <section id="certificate-detail" class="main-container">
-        <h1 class="section-title">Detail Sertifikat</h1>
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> <span>></span>
+            <a href="portfolio.html">Portfolio</a> <span>></span>
+            <span>Detail Sertifikat</span>
+        </div>
+        <h3 class="pre-title">Ini Sertifikat Saya</h3> <h1 class="section-title">Detail Sertifikat</h1>
         <div class="certificate-container">
             <div class="certificate-image">
                 <img id="certificate-image" src="" alt="[Nama Sertifikat]">
@@ -48,7 +54,7 @@
     </footer>
 
     <script>
-        // Contoh cara mengambil ID sertifikat dari URL (misalnya: certificate.html?id=0)
+        // Contoh cara mengambil ID sertifikat dari URL
         const urlParams = new URLSearchParams(window.location.search);
         const certificateId = urlParams.get('id');
 
@@ -65,18 +71,17 @@
                     document.getElementById('certificate-issuer').textContent = certificate.issuer;
                     document.getElementById('certificate-date').textContent = certificate.date;
                     document.getElementById('certificate-description').textContent = certificate.description;
-                    document.getElementById('certificate-detail-info').textContent = certificate.details || '-'; // Gunakan '-' jika tidak ada detail
+                    document.getElementById('certificate-detail-info').textContent = certificate.details || '-';
                     const validationLink = document.getElementById('certificate-validation-link');
                     if (certificate.validationLink) {
                         validationLink.href = certificate.validationLink;
                         validationLink.textContent = certificate.validationLink;
                     } else {
-                        validationLink.parentElement.style.display = 'none'; // Sembunyikan jika tidak ada link validasi
+                        validationLink.parentElement.style.display = 'none';
                     }
                     document.getElementById('certificate-image').src = certificate.image;
                     document.getElementById('certificate-image').alt = certificate.title;
                 } else {
-                    // Tampilkan pesan error jika ID tidak valid atau data tidak ditemukan
                     const certificateDetailSection = document.getElementById('certificate-detail');
                     certificateDetailSection.innerHTML = '<p class="error-message">Sertifikat tidak ditemukan.</p>';
                 }
@@ -91,4 +96,4 @@
         loadCertificateDetails();
     </script>
 </body>
-  </html>
+</html>
