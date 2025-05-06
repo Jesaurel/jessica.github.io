@@ -1,0 +1,49 @@
+[
+    {
+      "title": "Judul Project Kamu",
+      "category": "Web Development",
+      "technologies": "React, Tailwind",
+      "mainImage": "project-image.jpg",
+      "description": "Lorem ipsum dolor sit amet, ini deskripsi panjang project-nya. Jelasin tentang project ini, kenapa dibuat, tools yang dipakai, proses pembuatannya, dan apapun yang kamu mau.",
+      "detailImage1": "project-image-detail-1.jpg",
+      "challenge": "Menghadapi deadline sempit dan project mandiri yang butuh riset sendiri.",
+      "solution": "Memanfaatkan waktu luang di malam hari, riset UI/UX, dan buat prototype terlebih dahulu.",
+      "detailImage2": "project-image-detail-2.jpg",
+      "features": [
+        "Responsive Layout",
+        "Dark Mode",
+        "CRUD Fitur Admin",
+        "SEO Optimization"
+      ],
+      "impact": "Project ini berhasil dipakai oleh 50+ user internal dan client bilang tampilannya profesional.",
+      "sidebar": {
+        "category": "Web Development",
+        "client": "Personal Project (Gabut)",
+        "duration": "2 minggu",
+        "date": "April 2025"
+      }
+    },
+    {
+      "title": "Project Kedua Anda",
+      "category": "UI/UX Design",
+      "technologies": "Figma, Adobe XD",
+      "mainImage": "project-image-2.jpg",
+      "description": "Deskripsi untuk project kedua...",
+      "detailImage1": "detail-2-1.jpg",
+      "challenge": "Tantangan project kedua...",
+      "solution": "Solusi untuk project kedua...",
+      "detailImage2": "detail-2-2.jpg",
+      "features": [
+        "User Research",
+        "Prototyping",
+        "Usability Testing"
+      ],
+      "impact": "Dampak project kedua...",
+      "sidebar": {
+        "category": "UI/UX Design",
+        "client": "Klien B",
+        "duration": "1 bulan",
+        "date": "Mei 2025"
+      }
+    }
+  ]
