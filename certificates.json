@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "title": "Sertifikat Web Development Tingkat Lanjut",
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-10-25",
+    "description": "Menyelesaikan kelas intensif tentang pengembangan web dengan React dan Node.js.",
+    "details": "Mempelajari tentang routing, state management, API integration, dan deployment.",
+    "validationLink": "https://www.dicoding.com/certificates/XXXXX",
+    "image": "images/certificates/dicoding-web-advanced.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Pelatihan Mobile App Development dengan Flutter",
+    "issuer": "Google Developers Training",
+    "date": "2024-03-15",
+    "description": "Mengikuti program pelatihan intensif pengembangan aplikasi mobile lintas platform menggunakan Flutter.",
+    "details": "Mempelajari tentang widget, state management, navigation, dan Firebase integration.",
+    "image": "images/certificates/google-flutter.png"
+  },
+  {
+    "id": 2,
+    "title": "Sertifikat UI/UX Design Fundamental",
+    "issuer": "Coursera",
+    "date": "2024-07-01",
+    "description": "Menyelesaikan kursus dasar tentang prinsip-prinsip desain antarmuka pengguna dan pengalaman pengguna.",
+    "details": "Mempelajari tentang user research, wireframing, prototyping, dan usability testing.",
+    "validationLink": "https://www.coursera.org/verify/YYYYY",
+    "image": "images/certificates/coursera-uiux.png"
+  },
+  {
+    "id": 3,
+    "title": "Workshop Backend Development dengan PHP dan MySQL",
+    "issuer": "SMK Negeri 6 Surakarta",
+    "date": "2025-01-20",
+    "description": "Mengikuti workshop pengembangan backend menggunakan bahasa pemrograman PHP dan database MySQL.",
+    "details": "Mempelajari tentang dasar-dasar PHP, koneksi database, CRUD operations, dan keamanan dasar.",
+    "image": "images/certificates/smkn6-backend.jpg"
+  }
+  // Kamu bisa menambahkan data sertifikat lainnya di sini dengan format yang sama
+]
