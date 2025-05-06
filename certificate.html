@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/certificate-detail.css"> <title>Detail Sertifikat - [Nama Sertifikat]</title>
+</head>
+<body>
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="/">JAC</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="certificate-detail" class="main-container">
+        <h1 class="section-title">Detail Sertifikat</h1>
+        <div class="certificate-container">
+            <div class="certificate-image">
+                <img id="certificate-image" src="" alt="[Nama Sertifikat]">
+            </div>
+            <div class="certificate-info">
+                <h2 id="certificate-title">[Nama Sertifikat]</h2>
+                <p><strong>Diterbitkan Oleh:</strong> <span id="certificate-issuer">[Institusi Penerbit]</span></p>
+                <p><strong>Tanggal Diterbitkan:</strong> <span id="certificate-date">[Tanggal Diterbitkan]</span></p>
+                <p><strong>Deskripsi:</strong> <span id="certificate-description">[Deskripsi Singkat mengenai sertifikat]</span></p>
+                <p><strong>Detail:</strong> <span id="certificate-detail-info">[Detail Lebih Lanjut (jika ada)]</span></p>
+                <p><strong>Link Validasi:</strong> <a id="certificate-validation-link" href="#" target="_blank">[Link Validasi]</a> (jika ada)</p>
+                <a href="./portfolio.html" class="btn">Kembali ke Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-container">
+            <p>&copy; 2023 - Made by Night Coder</p>
+        </div>
+    </footer>
+
+    <script>
+        // Contoh cara mengambil ID sertifikat dari URL (misalnya: certificate.html?id=0)
+        const urlParams = new URLSearchParams(window.location.search);
+        const certificateId = urlParams.get('id');
+
+        // Asumsi kamu punya data sertifikat dalam format JSON (misalnya di file certificates.json)
+        async function loadCertificateDetails() {
+            try {
+                const response = await fetch('certificates.json');
+                const certificatesData = await response.json();
+
+                if (certificateId !== null && certificatesData[certificateId]) {
+                    const certificate = certificatesData[certificateId];
+
+                    document.getElementById('certificate-title').textContent = certificate.title;
+                    document.getElementById('certificate-issuer').textContent = certificate.issuer;
+                    document.getElementById('certificate-date').textContent = certificate.date;
+                    document.getElementById('certificate-description').textContent = certificate.description;
+                    document.getElementById('certificate-detail-info').textContent = certificate.details || '-'; // Gunakan '-' jika tidak ada detail
+                    const validationLink = document.getElementById('certificate-validation-link');
+                    if (certificate.validationLink) {
+                        validationLink.href = certificate.validationLink;
+                        validationLink.textContent = certificate.validationLink;
+                    } else {
+                        validationLink.parentElement.style.display = 'none'; // Sembunyikan jika tidak ada link validasi
+                    }
+                    document.getElementById('certificate-image').src = certificate.image;
+                    document.getElementById('certificate-image').alt = certificate.title;
+                } else {
+                    // Tampilkan pesan error jika ID tidak valid atau data tidak ditemukan
+                    const certificateDetailSection = document.getElementById('certificate-detail');
+                    certificateDetailSection.innerHTML = '<p class="error-message">Sertifikat tidak ditemukan.</p>';
+                }
+
+            } catch (error) {
+                console.error('Gagal memuat detail sertifikat:', error);
+                const certificateDetailSection = document.getElementById('certificate-detail');
+                certificateDetailSection.innerHTML = '<p class="error-message">Gagal memuat data sertifikat.</p>';
+            }
+        }
+
+        loadCertificateDetails();
+    </script>
+</body>
+  </html>
